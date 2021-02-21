@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <input type="checkbox" class="switch__dark-mode" />
+    <!-- <input type="checkbox" class="switch__dark-mode" /> -->
     <header class="nav">
         <div class="nav__logo">
             <div class="nav__picture--box">
@@ -29,12 +29,14 @@
         </div>
         <nav>
             <ul class="nav__links">
-                <li class="btn nav__btn"><a href="#home">Home</a></li>
-                <li class="btn nav__btn"><a href="#about">About</a></li>
-                <li class="btn nav__btn"><a href="#work">Work</a></li>
-                <li class="btn nav__btn"><a href="#contact">Contact</a></li>
+                <li class="btn nav__btn"><a class="nav__a" href="#home">Home</a></li>
+                <li class="btn nav__btn"><a class="nav__a" href="#about">About</a></li>
+                <li class="btn nav__btn"><a class="nav__a" href="#work">Work</a></li>
+                <li class="btn nav__btn"><a class="nav__a" href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="form-submission-result hidden">
+        </div>
     </header>
     <main class="main__cont">
         <section class="home" id="home">
@@ -153,21 +155,21 @@
         <section class="contact" id="contact">
             <h2>Contact</h2>
             <div class="contact__cont">
-                <form class="contact__form" onsubmit="submitForm(event)">
+                <form class="contact__form">
                     <div style="text-align: left;">
                         <label for="name">Name</label>
                         <br />
-                        <input class="contact__inputField--1" type="text" id="name" />
+                        <input class="contact__inputField--1" type="text" id="name" required/>
                     </div>
                     <div style="text-align: left;">
                         <label for="email">Email</label>
                         <br />
-                        <input class="contact__inputField--2" type="email" id="email" />
+                        <input class="contact__inputField--2" type="email" id="email" required/>
                     </div>
                     <div style="text-align: left;">
                         <label for="message">Message</label>
                         <br />
-                        <textarea class="contact__inputField--3" id="message"></textarea>
+                        <textarea class="contact__inputField--3" id="message" required></textarea>
                     </div>
                     <div>
                         <button class="contact__btn" type="submit">Submit</button>
@@ -190,6 +192,9 @@
             <p>© 2020 Saurabh Jha</p>
         </div>
     </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
     <script src="./js/index.js"></script>
     <noscript>
         <div class="noscript">

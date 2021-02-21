@@ -152,7 +152,6 @@ Section*/
 .nav__links li {
   list-style: none;
   padding: 1rem;
-  background-color: transparent;
   -webkit-transition: background-color 500ms ease-out;
   transition: background-color 500ms ease-out;
 }
@@ -160,8 +159,6 @@ Section*/
 .nav__links li a {
   text-decoration: none;
   font-size: 1rem;
-  color: #000;
-  font-weight: bold;
   font-family: "Abril Fatface", cursive;
   letter-spacing: 0.2vw;
   -webkit-transition: color 500ms ease-out;
@@ -175,6 +172,34 @@ Section*/
 
 .nav__links .btn:hover a {
   color: #fff;
+}
+
+.nav .form-submission-result {
+  position: absolute;
+  left: 50%;
+  bottom: -10vh;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #404040;
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+}
+
+.nav .success {
+  color: greenyellow;
+}
+
+.nav .failure {
+  color: orange;
+}
+
+.nav__btn {
+  background-color: transparent;
+}
+
+.nav__a {
+  color: #000;
+  font-weight: bold;
 }
 
 @media (max-width: 735px) {
@@ -762,5 +787,15 @@ Section*/
 .noscript {
   color: orangered;
   font-size: 0.8rem;
+}
+
+.btn-active {
+  color: #fff;
+  font-weight: bold;
+}
+
+.li-active {
+  background-color: #f19a3e;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
