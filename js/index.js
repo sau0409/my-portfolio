@@ -39,7 +39,6 @@ function changeNav(e) {
   anchor.classList.add("btn-active");
   li.classList.add("li-active");
 
-  e.preventDefault();
   e.stopPropagation();
 }
 
