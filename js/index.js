@@ -1,4 +1,4 @@
 function submitForm(e) {
-    console.log('submitted')
-    e.preventDefault();
+  console.log("submitted");
+  e.preventDefault();
 }

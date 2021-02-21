@@ -165,11 +165,11 @@ Section*/
 }
 
 @media (max-width: 735px) {
-    .nav {
-        &__links {
-            width: 100%;
-        }
+  .nav {
+    &__links {
+      width: 100%;
     }
+  }
 }
 
 .main__cont > section {
@@ -548,11 +548,11 @@ Section*/
     width: 300px;
     margin-bottom: 5vh;
 
-    .card__side--back{
-        .card__back--links {
-            justify-content: space-around;
-            align-items: center;
-        }
+    .card__side--back {
+      .card__back--links {
+        justify-content: space-around;
+        align-items: center;
+      }
     }
   }
 }
