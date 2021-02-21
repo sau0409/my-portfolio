@@ -152,8 +152,8 @@ Section*/
 .nav__links li {
   list-style: none;
   padding: 1rem;
-  -webkit-transition: background-color 500ms ease-out;
-  transition: background-color 500ms ease-out;
+  -webkit-transition: background-color 300ms ease-out;
+  transition: background-color 300ms ease-out;
 }
 
 .nav__links li a {
@@ -161,8 +161,8 @@ Section*/
   font-size: 1rem;
   font-family: "Abril Fatface", cursive;
   letter-spacing: 0.2vw;
-  -webkit-transition: color 500ms ease-out;
-  transition: color 500ms ease-out;
+  -webkit-transition: color 300ms ease-out;
+  transition: color 300ms ease-out;
 }
 
 .nav__links li:hover, .nav__links li:active {

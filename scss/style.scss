@@ -138,17 +138,14 @@ Section*/
     li {
       list-style: none;
       padding: 1rem;
-      //background-color: transparent;
-      transition: background-color 500ms ease-out;
+      transition: background-color 300ms ease-out;
 
       a {
         text-decoration: none;
         font-size: 1rem;
-        //color: $black-color;
-        //font-weight: bold;
         font-family: "Abril Fatface", cursive;
         letter-spacing: 0.2vw;
-        transition: color 500ms ease-out;
+        transition: color 300ms ease-out;
       }
 
       &:hover,
